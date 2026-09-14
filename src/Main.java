@@ -14,7 +14,7 @@ public class Main {
         }
 
         System.out.println("Задание №2");
-        int degree = 10;
+        int degree = 11;
         if (degree > 5 || degree < 5){
             System.out.printf("На улице " + degree + " градусов, можно идти без шапки");
         } else {
