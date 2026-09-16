@@ -19,13 +19,10 @@ public class Main {
         System.out.println("Задание №2");
 
         int t = 4;
-        if (t<5) {
+        if (t < 5) {
             System.out.println("Пора надеть шапку");
-        }
-
-        int t2 = 6;
-        if (t2>5) {
-            System.out.println("Сегодня тепло - можно идти без шапки ");
+        }else{
+            System.out.println("Сегодня тепло, можно идти без шапки");
         }
 
 
@@ -33,11 +30,10 @@ public class Main {
         int speed = 78;
         if (speed > 60){
             System.out.println("Если скорость " + speed + " то придется заплатить штраф");
+        }else{
+            System.out.println("Если скорость " + speed + " то можно ездить спокойно");
         }
-        int speedAllowed = 30;
-        if (speedAllowed < 60){
-            System.out.println("Ecли скорость " + speedAllowed + " то можно ездить спокойно");
-        }
+
 
         System.out.println("Задание №4");
 
@@ -73,36 +69,24 @@ public class Main {
 
 
         int ageFromLessThan5   =  4;
-        if (ageFromLessThan5<5 ) {
+        if (ageFromLessThan5 < 5) {
             System.out.println("Если возраст  ребенка равен " + ageFromLessThan5  +   ", то  он не может кататься на аттракционе.");
         } else {
             System.out.println("Если больше 5 лет, то может каталься на аттракционев в присутвствии взрослого");
+        } if (ageFromLessThan5 > 14) {
+            System.out.println("Если возраст ребенка равен " + ageFromLessThan5 + " лет, он может кататься на аттракционе без сопровождения взрослого");
         }
 
-        int ageFrom5To14 = 6;
-        if (ageFrom5To14 > 5 && ageFrom5To14 < 14) {
-            System.out.println("Если возраст  ребенка равен " + ageFrom5To14  +   ", то  он   может кататься на аттракционе в сопровождении  взрослого.");
-        } else {
-            System.out.println("Если больше 14 лет, то может кататься без  сопровождения взрослого");
-        }
-
-        int ageFromMoreThan14 = 14;
-        if (ageFromMoreThan14 >= 14) {
-            System.out.println("Если возраст  ребенка равен " + ageFromMoreThan14  +   ", то  он   может кататься на " +
-                    "аттракционе  без  сопровождения взрослого.");
-        } else {
-            System.out.println("Если меньше 14 лет, то может кататься, но в  сопровождении взрослого ");
-        }
 
         System.out.println("Задание №6");
-        int place = 0;
-        if (place  >  60) {
-            System.out.println("Если место под номером " + place  +   ", то   место стоячее");
+        int passenger = 102;
+        if (passenger  <=  60) {
+            System.out.println("Если пассажиро равно " + passenger  +   ", то есть сидячее место");
         }
-        if (place  <= 60 && place != 0) {
-            System.out.println("Если место под номером " + place + ", то   место сидячее");
+        if (passenger  > 60 && passenger <= 101) {
+            System.out.println("Если пассажиров равно " + passenger + ", то есть стоячие места");
         }   else {
-            System.out.println("Если мест " + place +  ", то вагон уже полностью забит ");
+            System.out.println("Если пассажир равен " + passenger +  ", то вагон уже полностью забит ");
         }
 
         System.out.println("Задание №7");
