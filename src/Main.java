@@ -38,28 +38,28 @@ public class Main {
         System.out.println("Задание №4");
 
         int ageFrom2To6 =  2;
-        if (ageFrom2To6>=2 && ageFrom2To6 <6) {
+        if (ageFrom2To6>=2 && ageFrom2To6 <= 6) {
             System.out.println("Если возраст человека равен " + ageFrom2To6+   ", то ему нужно ходить  в детский сад");
         } else {
             System.out.println("Ему не нужно ходить в детский сад");
         }
 
         int ageFrom7To18 =  7;
-        if (ageFrom7To18>=7 && ageFrom7To18 < 18) {
+        if (ageFrom7To18 >=7 && ageFrom7To18 < 18) {
             System.out.println("Если возраст человека равен " + ageFrom7To18+   ", то ему нужно ходить  в школу");
         } else {
             System.out.println("Ему не нужно ходить в школу");
         }
 
         int ageFrom18To24 =  18;
-        if (ageFrom18To24>=18 && ageFrom18To24 < 24) {
+        if (ageFrom18To24 >=18 && ageFrom18To24 < 24) {
             System.out.println("Если возраст человека равен " + ageFrom18To24+   ", то ему нужно ходить в университет");
         } else {
             System.out.println("Ему не нужно ходить в университет");
         }
 
         int ageFromMoreThan24  =  25;
-        if (ageFromMoreThan24>24 ) {
+        if (ageFromMoreThan24 >= 24 ) {
             System.out.println("Если возраст человека равен " + ageFromMoreThan24 +   ", то ему нужно ходить на работу");
         } else {
             System.out.println("Ему не нужно ходить на работу");
@@ -71,19 +71,18 @@ public class Main {
         int ageFromLessThan5   =  4;
         if (ageFromLessThan5 < 5) {
             System.out.println("Если возраст  ребенка равен " + ageFromLessThan5  +   ", то  он не может кататься на аттракционе.");
-        } else {
+        } else if (ageFromLessThan5 > 5 && ageFromLessThan5 <= 14) {
             System.out.println("Если больше 5 лет, то может каталься на аттракционев в присутвствии взрослого");
-        } if (ageFromLessThan5 > 14) {
+        } else  {
             System.out.println("Если возраст ребенка равен " + ageFromLessThan5 + " лет, он может кататься на аттракционе без сопровождения взрослого");
         }
 
 
         System.out.println("Задание №6");
-        int passenger = 102;
+        int passenger = 60;
         if (passenger  <=  60) {
             System.out.println("Если пассажиро равно " + passenger  +   ", то есть сидячее место");
-        }
-        if (passenger  > 60 && passenger <= 101) {
+        } else if (passenger  > 60 && passenger <= 101) {
             System.out.println("Если пассажиров равно " + passenger + ", то есть стоячие места");
         }   else {
             System.out.println("Если пассажир равен " + passenger +  ", то вагон уже полностью забит ");
@@ -91,17 +90,17 @@ public class Main {
 
         System.out.println("Задание №7");
 
-        int one = 30;
-        int two = 340;
-        int three = 67;
+        int one = 5;
+        int two = 5;
+        int three = 3;
 
-        if (one > two && one > three) {
+        if (one >= two && one >= three) {
             System.out.println("Максимальное число равное " + one);
         }
-        else if (two > one && two > three) {
+        else if (two >= one && two >= three) {
             System.out.println("Максимальное число равное " + two );
         }
-        else if  (three > one && three > two) {
+        else if  (three >= one && three >= two) {
             System.out.println("Максимальное число равное " + three);
         }
 
